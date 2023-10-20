@@ -4,7 +4,7 @@ import userRouter from './user.js';
 
 const appRouter = Router();
 
-appRouter.use('/users', userRouter);
-appRouter.use('/chats', chatRouter);
+appRouter.use('/user', userRouter);
+appRouter.use('/chat', chatRouter);
 
 export default appRouter;
