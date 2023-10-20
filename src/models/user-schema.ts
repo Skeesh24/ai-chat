@@ -1,6 +1,5 @@
 import { randomUUID } from 'crypto';
 import mongoose from 'mongoose';
-import User from '../models/user-schema.js';
 
 const chatSchema = new mongoose.Schema({
   id: {
@@ -27,7 +26,7 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
-  apssword: {
+  password: {
     type: String,
     required: true,
   },
